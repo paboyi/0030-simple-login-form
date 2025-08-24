@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    /* background: url(images/adrianna-geo-1rBg5YSi00c-unsplash.jpg) no-repeat; 
+    background-position: center;
+    background-size: cover; */
+
+    display: flex;
+    min-height: 100vh;
+    justify-content: center; /*horizontally ---*/
+    align-items: center; /* vertically | */
+
+    animation: changeBackground 600s infinite;
+}
+
+
+@keyframes changeBackground{
+    0%, 10% {
+        background: url(images/1.jpg) center/cover no-repeat;
+            }
+    10%, 20% {
+        background: url(images/2.jpg) center/cover no-repeat;
+    }
+    20%, 30% {
+        background: url(images/3.jpg) center/cover no-repeat;
+    }
+    30%, 40% {
+        background: url(images/5.jpg) center/cover no-repeat;
+        }
+    40%, 50% {
+        background: url(images/9.jpg) center/cover no-repeat;
+    }
+    50%, 60% {
+        background: url(images/6.jpg) center/cover no-repeat;
+    }
+    60%, 70% {
+        background: url(images/10.jpg) center/cover no-repeat;
+        }
+    70%, 80% {
+        background: url(images/1.jpg) center/cover no-repeat;
+    }
+    80%, 90% {
+        background: url(images/7.jpg) center/cover no-repeat;
+    }
+    90%, 100% {
+        background: url(images/8.jpg) center/cover no-repeat;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    background-color: transparent;
+    /* background-color: rgb(110, 51, 12); */
+    width: 420px;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    padding: 30px 40px; /*o r u l*/
+
+    color: white;
+
+    backdrop-filter: blur(5px);
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    /* background-color: yellow; */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 40px;
+
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    color: white;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+
+
+.wrapper .remember-forgot {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px 0;
+}
+
+
+.wrapper .remember-forgot label input {
+    accent-color: rgb(0, 255, 229);
+    margin-right: 3px;
+}
+
+.wrapper .remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper .remember-forgot a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(51, 61, 255);
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 40px;
+
+    border-radius: 40px;
+
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+
+    margin: 0 0 10px 0;
+
+    box-shadow: 8px 5px 6px rgba(0, 0, 0, 0.1); /*acts as gaussian blur*/
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: black;
+}
+
+
+
+.wrapper .register-link {
+    /* background-color: rgba(38, 232, 86, 0.958); */
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.wrapper .register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.wrapper .register-link p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(51, 61, 255);
+}
